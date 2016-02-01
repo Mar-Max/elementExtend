@@ -2,7 +2,7 @@
  * DOM操作常用功能原生JS封装
  * 
  * 
- * @authors 马硕
+ * @authors Mar_Max
  * @startDate    2015-07-03 20:56
  * @repairDate   2015-11-14 19:04
  * @version 0.10.0
