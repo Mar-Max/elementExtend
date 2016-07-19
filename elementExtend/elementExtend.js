@@ -29,7 +29,7 @@
 			5.element.Closest('条件','范围');
 		 */
 		var _self = this,
-			_condition = condition, //查找条件
+		    _condition = condition, //查找条件
 			_scope = scope, //查找范围
 			_parNode = _self.parentNode,
 			_ele = null;
