@@ -144,7 +144,7 @@
 
         if (_classNames) {
             _selfClass = _self.className;
-            _classNameArr = _classNames.split(' ');
+            _classNameArr = _classNames.split(/\s+/);
 
             for(var i=0;i<_classNameArr.length;i++){
                 if(!_classNameArr[i]) continue;
@@ -218,7 +218,7 @@
 
         if (!_events || !_fn) return _self;
 
-        _eventsArr = _events.split(' ');
+        _eventsArr = _events.split(/\s+/);
 
         for(var i=0;i<_eventsArr.length;i++){
             if(!_eventsArr[i]) continue;
@@ -257,7 +257,7 @@
             _deep = deep || false;
 
         if (!_events) return _self;
-        _eventsArr = _events.split(' ');
+        _eventsArr = _events.split(/\s+/);
 
         for(var i = 0; i < _eventsArr.length; i++){
             if(!_eventsArr[i]) continue;
@@ -562,7 +562,7 @@
         //一个参数
         if (_len == 1 && Type(_argu[0]) == 'String'){
             _className = _argu[0];
-            _classArr = _className.split(' ');
+            _classArr = _className.split(/\s+/);
 
             if(_classArr.length > 1){
                 for(var i=0;i<_classArr.length;i++){
