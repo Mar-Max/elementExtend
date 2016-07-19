@@ -10,11 +10,11 @@
 
 ;(function (window,undefined){
 	var node = Node.prototype,
-		collection = HTMLCollection.prototype,
-		nodeList = NodeList.prototype,
-		stringProto = String.prototype,
-		arrayProto = Array.prototype,
-		$;
+	    collection = HTMLCollection.prototype,
+	    nodeList = NodeList.prototype,
+	    stringProto = String.prototype,
+	    arrayProto = Array.prototype,
+	    $;
 
 /*---------------------------- DOM对象扩展 ----------------------------*/
 	//选取有指定条件的最近父级
