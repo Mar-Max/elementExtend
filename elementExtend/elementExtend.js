@@ -1717,8 +1717,7 @@
         var timer=null;
         json=json || {};
         if(!json.url){
-            alert('缺少URL');
-            return; 
+            throw new Error('缺少url参数');
         }
         json.type=json.type || 'get';
         json.data=json.data || {};
@@ -1767,8 +1766,8 @@
         
         //超时
         timer=setTimeout(function(){
-            alert('网络不给力');
             oAjax.onreadystatechange=null;
+            throw new Error('网络异常')
         },json.time);
     };
 
